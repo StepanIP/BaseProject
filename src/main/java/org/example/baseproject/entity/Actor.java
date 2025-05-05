@@ -28,7 +28,7 @@ public class Actor implements Serializable {
     @JsonIgnore
     private Movie movie;
 
-    @OneToOne(mappedBy = "actor")
+    @OneToOne(mappedBy = "actors")
     @JoinColumn(name = "actor_image_id")
     private ActorImage actorImage;
 }
